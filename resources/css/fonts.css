@@ -1,0 +1,32 @@
+/* ______________________________SF-Pro-Display___________________________________ */
+@font-face {
+    font-family: "SF-Pro-Display"; 
+    src: url("../fonts/SFProDisplay-Light.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: 300;
+}
+@font-face {
+    font-family: "SF-Pro-Display"; 
+    src: url("../fonts/SFProDisplay-Medium.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: 500;
+}
+@font-face {
+    font-family: "SF-Pro-Display"; 
+    src: url("../fonts/SFProDisplay-Semibold.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: 600;
+}
+/* _______________________________Evolventa__________________________________ */
+@font-face {
+    font-family: "Evolventa"; 
+    src: url("../fonts/Evolventa-Regular.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Evolventa"; 
+    src: url("../fonts/Evolventa-Bold.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: 700;
+}

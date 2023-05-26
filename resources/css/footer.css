@@ -1,0 +1,22 @@
+.foot_top {
+    height: 120px;
+}
+.text_left {
+    text-align: end;
+}
+.text_left a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 165%;
+    text-transform: uppercase;
+    color: #141414;
+}
+.foot_mid h3, .foot_bot h3 {
+    font-size: 20px;
+    line-height: 165%;
+    color: #141414;
+}
+.foot_mid span {
+    color: rgba(46, 215, 223, 1);
+}

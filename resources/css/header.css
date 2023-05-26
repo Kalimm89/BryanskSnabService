@@ -1,0 +1,42 @@
+* {
+    /* margin: 0px !important;
+    padding: 0px !important; */
+    text-decoration: none;
+    font-family: 'Evolventa';  
+    font-style: normal; 
+    font-weight: 400;
+    max-width: 1920px;
+    text-decoration: none;
+    list-style-type: none; 
+    scroll-behavior: smooth;
+}
+.header_top {
+    height: 124px;
+}
+.header_logo p{
+    margin-bottom: 0px;
+    padding-left: 16px;
+}
+.header_bot {
+    background: black;
+    color: white;
+    height: 57px;
+}
+.header_bot a {
+    color: white;
+    text-decoration: none;
+}
+.header_bot {
+    list-style: none;
+}
+.container-fluid ul li {
+    transition: 0.5s;
+}
+.container-fluid ul li:hover {
+    transform: scale(1.1);
+}
+/* ________________________________________________________________________________________ */
+
+@media screen and (max-width: 768px) {
+    
+}
