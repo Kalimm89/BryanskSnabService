@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,10 +15,15 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::middleware('admin')->prefix('admin')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('admin');
+});
+Route::middleware('guest')->group(function () {
+Route::get('/register', [UserController::class, 'create'])->name('register.create');
+Route::post('/register', [UserController::class, 'store'])->name('register.store');
+Route::get('/login', [UserController::class, 'loginForm'])->name('login.create');
+Route::post('/login', [UserController::class, 'login'])->name('login');
+});
+Route::get('/logout', [UserController::class, 'logout'])->name('logout')->middleware('auth');
 
-Route::get('/admin', function () {
-    return view('admin.index');
-});
-Route::get('/', function () {
-    return view('welcome');
-});

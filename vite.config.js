@@ -12,16 +12,17 @@ export default defineConfig({
              'public/assets/admin/dist/js/demo.js',
              'resources/css/main.css',
              'resources/css/bootstrap.min.css',
-             'resources/css/bootstrap.min.css.map.map',
+            //  Главная
              'resources/css/fonts.css',
              'resources/css/footer.css',
              'resources/css/header.css',
              'resources/js/bootstrap.bundle.min.js',
-             'resources/js/bootstrap.bundle.min.js.map.map',
-             'resources/js/bootstrap.js',
              'resources/js/main.js'
             ],
             refresh: true,
+            
         }),
     ],
+    
+    
 });

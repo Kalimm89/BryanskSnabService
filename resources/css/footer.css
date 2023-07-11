@@ -1,22 +1,135 @@
-.foot_top {
-    height: 120px;
+.footer_fluid {
+    background: #1C7687;
+    color: #F6F6F6;
 }
-.text_left {
-    text-align: end;
+.footer {
+    padding: 50px 0px 60px 0px;
 }
-.text_left a {
+.ft_l_p {
+    margin-bottom: 70px;
+}
+.ft_l_p h4, .f_part h4 {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+}
+.footer li {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.footer li a {
+    color: #CDCDCD;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 165%;
-    text-transform: uppercase;
-    color: #141414;
 }
-.foot_mid h3, .foot_bot h3 {
-    font-size: 20px;
-    line-height: 165%;
-    color: #141414;
+.footer li a:hover {
+    color: #F6F6F6;
+    text-decoration: underline !important;
 }
-.foot_mid span {
-    color: rgba(46, 215, 223, 1);
+.copy_right {
+    font-size: 14px;
+    line-height: 20px;
+    color: #6FD7EA;
+}
+/* ----------------------------------------------------------------------------------- */
+.f_part {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+}
+.col_soc a {
+    padding-left: 10px;
+}
+/* ----------------------------------------------------------------------------------- */
+.ft_r_t {
+    margin-bottom: 65px;
+}
+.f_phone {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 23px;
+}
+.f_mail {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #CDCDCD;
+}
+.f_adress {
+    font-size: 16px;
+    line-height: 22px;
+    color: #CDCDCD;
+}
+.footer form input {
+    width: 242px;
+    height: 44px;
+    gap: 4px;
+    background: #1C7687;
+    border-color: #6FD7EA;
+}
+.footer form input:active,
+.footer form input:focus {
+    border-color: #6FD7EA;
+}
+.footer input:active::placeholder,
+.footer input:focus::placeholder{
+    color: #4F4F4F;
+}
+.footer input::placeholder {
+    color: #6FD7EA;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer button {
+    width: 180px;
+    height: 43px;
+    border-radius: 4px;
+    gap: 4px;
+    background: #36C5DF;
+    font-family: Roboto-Medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #040404;
+    border-color: #36C5DF;
+}
+.footer button:hover {
+    background: #075C6F;
+    color: #F6F6F6;
+    border-color: #6FD7EA;
+}
+/* _______________________________________mobile_________________________________________________ */
+.footer_mobile h4 {
+    font-size: 16px;
+    line-height: 22px;
+}
+.footer_mobile .f_phone {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px !important;
+}
+.footer_mobile .f_mail {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 15px !important;
+}
+.footer_mobile .f_adress {
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer_mobile_about {
+    max-width: 300px;
+}
+.footer_mobile_top {
+    margin-bottom: 36px;
+}
+.firm {
+    font-size: 12px;
+    line-height: 17px;
+    color: #6FD7EA;
+}
+.footer_mobile_soc a {
+    margin-left: 20px;
 }

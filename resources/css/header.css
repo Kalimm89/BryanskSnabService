@@ -1,42 +1,140 @@
+/* ---Общие стили */
 * {
-    /* margin: 0px !important;
-    padding: 0px !important; */
-    text-decoration: none;
-    font-family: 'Evolventa';  
+    font-family: 'Roboto-Regular';  
     font-style: normal; 
     font-weight: 400;
     max-width: 1920px;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style-type: none; 
     scroll-behavior: smooth;
+    letter-spacing: 0em;
 }
-.header_top {
-    height: 124px;
+body {
+    overflow-x: hidden;
 }
-.header_logo p{
+/* ________________________________________________________________________________________ */
+.head_top {
+    height: 100px;
+}
+.head_menu {
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+.head_menu a {
+    color: #191919;
+}
+.header_desc p {
     margin-bottom: 0px;
-    padding-left: 16px;
 }
-.header_bot {
-    background: black;
-    color: white;
-    height: 57px;
+.header_time {
+    width: 150px;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0em;
 }
-.header_bot a {
-    color: white;
-    text-decoration: none;
+.header_phone {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0em;
 }
-.header_bot {
-    list-style: none;
+.header_icons {
+    gap: 10px;
 }
-.container-fluid ul li {
-    transition: 0.5s;
+.head_menu_ab:hover > .dd_1 .dropdown-menu,
+.head_menu_ser:hover > .dropdown-menu {
+    display: block; 
+    position: absolute;
+    top: 64px;
+    padding-top: 10px;
+} 
+.dropdown-toggle {
+    color: #191919;
 }
-.container-fluid ul li:hover {
-    transform: scale(1.1);
+.dropdown-toggle::after {
+    border: 0px;
+}
+.head_menu_ab:hover,
+.head_menu_ser:hover {
+    border-bottom: 3px solid #075C6F;
+}
+.head_menu_ab:hover .dropdown-toggle,
+.head_menu_ser:hover .dropdown-toggle{
+    color: #075C6F;
+}
+.head_menu_ab:active,
+.head_menu_ser:active {
+    border: 3px solid #6FD7EA;
+}
+.dropdown-item {
+    padding: 8px 40px 8px 40px;
+    text-transform: uppercase;
+}
+.dropdown-item:hover {
+    color: #075C6F;
+    background-color: white;
+}
+.dropdown-item:active {
+    color: #040404;
+    background-color: #36C5DF;
+}
+/* ___________________________________Modal_____________________________________________________ */
+.modal-header {
+    border-bottom: none;
+}
+.btn-close {
+    font-size: 30px;
+    padding-top: 20px !important;
+    padding-right: 20px !important;
+}
+.modal-body_head .accordion-button,
+.modal-body_head a {
+    font-size: 15px;
+    line-height: 18px;
+    color: #040404;
+    text-transform: uppercase;
+}
+header .accordion-item {
+    max-width: 460px;
+}
+header .accordion {
+    --bs-accordion-active-bg: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+    padding-top: 29px;
+    --bs-accordion-btn-active-icon: url('../img/btn-arrow.svg');
+}
+.accordion-button:not(.collapsed) {
+    color: #04A5C3;
+}
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(-90deg);
+}
+header .accordion .body_ac {
+    color: #4F4F4F;
+}
+.modal-footer {
+    justify-content: center;
+    padding-bottom: 50px;
+    border-top: none;
+}
+.mf_soc {
+    gap: 44px;
+    margin-bottom: 60px;
+}
+.mf_phone {
+    font-size: 18px;
+    line-height: 23px;
+    color: #1D1D1D;
+}
+.mf_ardess {
+    font-size: 12px;
+    line-height: 17px;
 }
 /* ________________________________________________________________________________________ */
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 1200px) {
+    .header_ad_phone a{
+        font-size: 18px;
+        line-height: 23px;
+        color: #1D1D1D;
+    }
 }
