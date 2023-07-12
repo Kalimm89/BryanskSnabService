@@ -30,7 +30,16 @@ class UserController extends Controller
     }
 
     public function loginForm() {
-        return view('user.login');
+        // if(Auth::user()) {
+        //     return redirect()->route('home');
+        // } else {
+        //     return view('user.login');
+        // }
+        if (Auth::check())
+            {
+                return redirect()->route('home');
+            }
+            return view('user.login');
     }
 
     public function login(Request $request) {
@@ -47,7 +56,7 @@ class UserController extends Controller
             if(Auth::user()->is_admin) {
                 return redirect()->route('admin');
             } else {
-                return redirect('/');
+                return redirect()->route('home');
             }
         }
         return redirect()->back()->with('error', 'Неверный логин или пароль');

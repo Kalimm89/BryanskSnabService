@@ -43,10 +43,10 @@
                                 <li><a class="dropdown-item" href="#">Аренда Складов</a></li>
                             </ul>
                     </div>
-                    <div class="col head_menu ps-2 d-none d-xl-block">
+                    <!-- <div class="col head_menu ps-2 d-none d-xl-block">
                         <a href="">ТАРИФЫ</a>
-                    </div>
-                    <div class="col head_menu d-none d-xl-block">
+                    </div> -->
+                    <div class="col head_menu d-none d-xl-block text-center">
                         <a href="">КОНТАКТЫ</a>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                                                 <a class="accordion-body body_ac d-block" href="#">Аренда Складов</a>
                                               </div>
                                             </div>
-                                            <div class="accordion-item mx-auto">
+                                            <div class="accordion-item mx-auto d-none">
                                               <a class="accordion-body d-block" href="#">Тарифы</a>
                                             </div>
                                             <div class="accordion-item mx-auto">
@@ -196,7 +196,7 @@
                     <div class="row ft_r_t">
                         <p class="f_phone">8 (4832) 63 66 00</p>
                         <p class="f_mail">info@bssopr.ru</p>
-                        <p class="f_adress">241020, Россия, г. Брянск, прд. Московский, д. 10/а</p>
+                        <p class="f_adress">241020, Россия, г. Брянск, проезд Московский, д. 10а, оф. 310</p>
                     </div>
                     <form class="row g-2 justify-content-end d-none d-xl-flex">
                         <div class="col-auto">
@@ -240,7 +240,7 @@
                         <div class="row">
                             <p class="f_phone px-0 my-0">8 (4832) 63 66 00</p>
                             <p class="f_mail px-0 my-0">info@bssopr.ru</p>
-                            <p class="f_adress px-0 my-0">241020, Россия, г. Брянск, <br> прд. Московский, д. 10/а</p>
+                            <p class="f_adress px-0 my-0">241020, Россия, г. Брянск, проезд Московский, д. 10а, оф. 310</p>
                         </div>
                     </div>
                 </div>

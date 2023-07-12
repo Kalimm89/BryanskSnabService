@@ -163,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section class="container pertners">
+        <!-- <section class="container pertners">
             <div class="row">
                 <h2>Наши партнеры</h2>
             </div>
@@ -191,24 +191,26 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="container info">
             <div class="row">
                 <h3>Больше информации</h3>
             </div>
             <div class="row">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
+                @foreach($questions as $quest)
                     <div class="accordion-item">
                       <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Вопросы по оплате
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{$quest->id}}" aria-expanded="false" aria-controls="flush-collapse{{$quest->id}}">
+                        {{$quest->title}}
                         </button>
                       </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Ответы по оплате</div>
+                      <div id="flush-collapse{{$quest->id}}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">{{$quest->content}}</div>
                       </div>
                     </div>
-                    <div class="accordion-item">
+                @endforeach
+                    <!-- <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             География поставок
@@ -238,7 +240,7 @@
                           <div class="accordion-body">Отслеживание доставки грузов</div>
                         </div>
                       </div>
-                  </div>
+                  </div> -->
             </div>
         </section>
 @endsection
