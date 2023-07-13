@@ -12,7 +12,8 @@
              'public/assets/admin/plugins/jquery/jquery.min.js',
              'public/assets/admin/plugins/bootstrap/js/bootstrap.bundle.min.js',
              'public/assets/admin/dist/js/adminlte.min.js',
-             'public/assets/admin/dist/js/demo.js'])
+             'public/assets/admin/dist/js/demo.js',
+             'public/assets/ckeditor5/build/ckeditor.js'])
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -153,5 +154,23 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+<!-- <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script> -->
+   <script>
+    window.addEventListener("load", (e)=>{
+    ClassicEditor.create( document.querySelector( '#editor' ) )
+    .then( editor => {
+        console.log( editor );
+    } )
+    .catch( error => {
+        console.error( error );
+    } );
+});
+   </script>
 </body>
 </html>

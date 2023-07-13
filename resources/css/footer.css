@@ -4,6 +4,7 @@
 }
 .footer {
     padding: 50px 0px 60px 0px;
+    color: #F6F6F6 !important;
 }
 .ft_l_p {
     margin-bottom: 70px;
@@ -31,6 +32,9 @@
     line-height: 20px;
     color: #6FD7EA;
 }
+.footh4 {
+    color: #F6F6F6;
+}
 /* ----------------------------------------------------------------------------------- */
 .f_part {
     width: 150px;
@@ -40,6 +44,9 @@
 .col_soc a {
     padding-left: 10px;
 }
+.f_part h4 {
+    color: #F6F6F6;
+}
 /* ----------------------------------------------------------------------------------- */
 .ft_r_t {
     margin-bottom: 65px;
@@ -48,6 +55,7 @@
     margin-bottom: 5px;
     font-size: 18px;
     line-height: 23px;
+    color: #F6F6F6;
 }
 .f_mail {
     margin-bottom: 15px;
@@ -104,11 +112,13 @@
 .footer_mobile h4 {
     font-size: 16px;
     line-height: 22px;
+    color: #F6F6F6;
 }
 .footer_mobile .f_phone {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 10px !important;
+    color: #F6F6F6;
 }
 .footer_mobile .f_mail {
     font-size: 12px;

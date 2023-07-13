@@ -12,12 +12,14 @@ export default defineConfig({
              'public/assets/admin/dist/js/demo.js',
              'resources/css/main.css',
              'resources/css/bootstrap.min.css',
+             'public/assets/ckeditor5/build/ckeditor.js',
             //  Главная
              'resources/css/fonts.css',
              'resources/css/footer.css',
              'resources/css/header.css',
              'resources/js/bootstrap.bundle.min.js',
-             'resources/js/main.js'
+             'resources/js/main.js',
+             'resources/css/uslugi.css',
             ],
             refresh: true,
             

@@ -37,7 +37,7 @@
 <tr>
 <td>{{$quest->id}}</td>
 <td>{{$quest->title}}</td>
-<td >{{$quest->content}}</td>
+<td >{!! $quest->content !!}</td>
 <td>
   <a href="{{ route('questions.edit', $quest->id) }}" class="btn btn-info btn-sm float-left mr-1">
     <i class="fas fa-pencil-alt"></i>

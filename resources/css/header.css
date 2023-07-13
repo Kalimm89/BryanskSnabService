@@ -8,6 +8,7 @@
     list-style-type: none; 
     scroll-behavior: smooth;
     letter-spacing: 0em;
+    color: #040404;
 }
 body {
     overflow-x: hidden;

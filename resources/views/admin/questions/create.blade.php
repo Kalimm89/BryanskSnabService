@@ -14,8 +14,8 @@
         <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" id="title" placeholder="Вопрос">
     </div>
     <div class="form-group">
-        <label for="title">Ответ</label>
-        <input type="text" name="content" class="form-control @error('content') is-invalid @enderror" id="content" placeholder="Ответ">
+        <label for="editor">Ответ</label>
+        <textarea class="form-control @error('content') is-invalid @enderror" name="content" id="editor" rows="5"></textarea>
     </div>
 </div>
 

@@ -1,0 +1,52 @@
+/* about_cros___________________________________________________________________ */
+.about_cros {
+    margin-top: 60px;
+    margin-bottom: 120px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.about_cros h2 {
+    margin-bottom: 60px;
+    font-family: Roboto-Medium;
+    font-size: 50px;
+    line-height: 55px;
+}
+.about_cros h4 {
+    font-family: Roboto-Medium;
+    font-size: 28px;
+    line-height: 36px;
+}
+.about_cros h5 {
+    font-family: Roboto-Medium;
+    font-size: 20px;
+    line-height: 26px;
+}
+.p_first_cros {
+    margin-bottom: 20px;
+}
+.about_cros ol li{
+    list-style-type: decimal;
+}
+.about_cros ol {
+    padding-left: 1.5rem;
+}
+/* quest_form___________________________________________________________________ */
+.us_form_desc {
+    max-width: 480px;
+}
+.us_form {
+    gap: 200px;
+}
+/* params___________________________________________________________________ */
+@media screen and (max-width: 1200px) {
+    .us_form {
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_cros {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+}

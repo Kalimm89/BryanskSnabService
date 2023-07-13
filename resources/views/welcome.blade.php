@@ -1,4 +1,5 @@
 @extends('layouts.layouts')
+@section('title', 'Главная страница')
 @section('main')
         <section class="intro container-fluid px-0 position-relative">
             <div id="myCarousel" class="carousel slide position-absolute z-n1" data-bs-ride="carousel">
@@ -206,7 +207,7 @@
                         </button>
                       </h2>
                       <div id="flush-collapse{{$quest->id}}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">{{$quest->content}}</div>
+                        <div class="accordion-body">{!! $quest->content !!}</div>
                       </div>
                     </div>
                 @endforeach

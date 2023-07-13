@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>@yield('title')</title>
     @vite(['resources/css/bootstrap.min.css',
             'resources/css/main.css',
              'resources/css/fonts.css',
              'resources/css/footer.css',
              'resources/css/header.css',
+             'resources/css/uslugi.css',
              'resources/js/bootstrap.bundle.min.js',
              'resources/js/main.js'])
 </head>
@@ -36,7 +37,7 @@
                         </div>
                     </div>
                     <div class="col head_menu_ser text-center d-none d-xl-block">
-                        <a href="#!" class="dropdown-toggle" id="dropdownMenu2" aria-expanded="false">УСЛУГИ</a>
+                        <a href="{{ route('uslugi') }}" class="dropdown-toggle" id="dropdownMenu2" aria-expanded="false">УСЛУГИ</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li><a class="dropdown-item" href="#">Кросс-Докинг</a></li>
                                 <li><a class="dropdown-item" href="#">Аренда Офисов</a></li>
@@ -163,7 +164,7 @@
                             <a href="#!"><img src="{{ asset('img/footer-logo.png') }}" alt=""></a>
                         </div>
                         <div class="col-7">
-                            <h4>О нас</h4>
+                            <h4 class="footh4">О нас</h4>
                             <ul class="px-0">
                                 <li><a href="#!">Политика конфиденциальности</a></li>
                                 <li><a href="#!">Карта сайта</a></li>
@@ -179,7 +180,7 @@
                     <div class="row f_part">
                         <h4>Партнерам</h4>
                         <ul class="text-start">
-                            <li class=""><a href="#!">Услуги</a></li>
+                            <li class=""><a href="{{ route('uslugi') }}">Услуги</a></li>
                             <li class=""><a href="#!">Тарифы</a></li>
                             <li class=""><a href="#!">Реквизиты</a></li>
                         </ul>
@@ -232,7 +233,7 @@
                         <div class="row">
                             <h4 class="px-0">Партнерам</h4>
                             <ul class="px-0">
-                                <li class=""><a href="#!">Услуги</a></li>
+                                <li class=""><a href="{{ route('uslugi') }}">Услуги</a></li>
                                 <li class=""><a href="#!">Тарифы</a></li>
                                 <li class=""><a href="#!">Реквизиты</a></li>
                             </ul>
