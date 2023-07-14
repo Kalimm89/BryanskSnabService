@@ -19,7 +19,7 @@ export default defineConfig({
              'resources/css/header.css',
              'resources/js/bootstrap.bundle.min.js',
              'resources/js/main.js',
-             'resources/css/uslugi.css',
+             'resources/css/cross-docking.css',
             ],
             refresh: true,
             

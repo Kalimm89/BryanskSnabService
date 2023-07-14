@@ -1,5 +1,5 @@
 @extends('layouts.layouts')
-@section('title', 'Услуги')
+@section('title', 'Кросс-докинг')
 @section('main')
 <section class="container about_cros">
     <div class="row">
@@ -64,18 +64,19 @@
                 <div class="row flex-column flex-lg-row text-center text-lg-start us_form align-items-center align-items-lg-start">
                     <div class="col us_form_desc">
                         <h3>Оставьте заявку <br> на Кросс-докинг</h3>
-                        <p>В бизнесе очень важно качество и скорость предоставляемых услуг, поэтому мы оперативно свяжемся свами и расскажем об интересующих вас деталях</p>
+                        <p>В бизнесе очень важно качество и скорость предоставляемых услуг, поэтому мы оперативно свяжемся с вами и расскажем об интересующих вас деталях</p>
                     </div>
                     <div class="col d-flex flex-column align-items-center">
-                        <form class="mx-auto mx-md-0">
+                        <form class="mx-auto mx-md-0" method="post" action="{{ route('сonsultation') }}">
+                            @csrf
                             <div class="mb-2">
-                                <input type="text" class="form-control inp_m" placeholder="Ваше имя*" aria-label="Имя пользователя" aria-describedby="basic-addon1" required>
+                                <input type="text" class="form-control inp_m" placeholder="Ваше имя*" name="name" aria-label="Имя пользователя" aria-describedby="basic-addon1" required>
                             </div>
                             <div class="mb-2">
-                                <input type="tel" class="form-control inp_m" placeholder="Контактный телефон*" aria-label="Телефон" aria-describedby="basic-addon2" required>
+                                <input type="tel" class="form-control inp_m" placeholder="Контактный телефон*" name="tel" aria-label="Телефон" aria-describedby="basic-addon2" required>
                             </div>
                             <div class="mb-2">
-                                <input type="text" class="form-control inp_m" placeholder="Название организации" aria-label="Организация" aria-describedby="basic-addon3">
+                                <input type="text" class="form-control inp_m" placeholder="Название организации" name="organ" aria-label="Организация" aria-describedby="basic-addon3">
                             </div>
                             <div class="form-check mb-4">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>

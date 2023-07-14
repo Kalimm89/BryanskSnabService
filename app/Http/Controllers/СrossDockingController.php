@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class UslugiController extends Controller
+class СrossDockingController extends Controller
 {
     public function index() {
-        return view('uslugi.index');
+        return view('uslugi.cross-docking');
      }
 }

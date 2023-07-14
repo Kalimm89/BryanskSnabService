@@ -139,15 +139,16 @@
                         <p>Заполните форму и получите индивидуальную консультацию <br> по вашему вопросу.</p>
                     </div>
                     <div class="col">
-                        <form class="mx-auto mx-md-0">
+                        <form class="mx-auto mx-md-0" method="post" action="{{ route('сonsultation') }}">
+                            @csrf
                             <div class="mb-2">
-                                <input type="text" class="form-control inp_m" placeholder="Ваше имя*" aria-label="Имя пользователя" aria-describedby="basic-addon1" required>
+                                <input type="text" class="form-control inp_m" name="name" placeholder="Ваше имя*" aria-label="Имя пользователя" aria-describedby="basic-addon1" required>
                             </div>
                             <div class="mb-2">
-                                <input type="tel" class="form-control inp_m" placeholder="Контактный телефон*" aria-label="Телефон" aria-describedby="basic-addon2" required>
+                                <input type="tel" class="form-control inp_m" name="tel" placeholder="Контактный телефон*" aria-label="Телефон" aria-describedby="basic-addon2" required>
                             </div>
                             <div class="mb-2">
-                                <input type="text" class="form-control inp_m" placeholder="Название организации" aria-label="Организация" aria-describedby="basic-addon3">
+                                <input type="text" class="form-control inp_m" name="organ" placeholder="Название организации" aria-label="Организация" aria-describedby="basic-addon3">
                             </div>
                             <div class="form-check mb-4">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>

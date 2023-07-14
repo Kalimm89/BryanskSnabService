@@ -10,7 +10,7 @@
              'resources/css/fonts.css',
              'resources/css/footer.css',
              'resources/css/header.css',
-             'resources/css/uslugi.css',
+             'resources/css/cross-docking.css',
              'resources/js/bootstrap.bundle.min.js',
              'resources/js/main.js'])
 </head>
@@ -23,7 +23,7 @@
                         <img src="{{ asset('img/header-logo.svg') }}" alt="">
                     </a>
                     <div class="col head_menu_ab d-none d-xl-block">
-                        <a href="#!" class="dropdown-toggle" aria-expanded="false">О КОМПАНИИ</a>
+                        <a href="{{ route('home') }}" class="dropdown-toggle" aria-expanded="false">О КОМПАНИИ</a>
                         <div class="dd_1">
                             <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Наша команда</a></li>
@@ -37,9 +37,10 @@
                         </div>
                     </div>
                     <div class="col head_menu_ser text-center d-none d-xl-block">
-                        <a href="{{ route('uslugi') }}" class="dropdown-toggle" id="dropdownMenu2" aria-expanded="false">УСЛУГИ</a>
+                        <a href="#!" class="dropdown-toggle" id="dropdownMenu2" aria-expanded="false">УСЛУГИ</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <li><a class="dropdown-item" href="#">Кросс-Докинг</a></li>
+                                <li><a class="dropdown-item" href="{{ route('cross-docking') }}">Кросс-Докинг</a></li>
+                                <li><a class="dropdown-item" href="#">Ответственное хранение</a></li>
                                 <li><a class="dropdown-item" href="#">Аренда Офисов</a></li>
                                 <li><a class="dropdown-item" href="#">Аренда Складов</a></li>
                             </ul>
@@ -94,7 +95,8 @@
                                                 </button>
                                               </h2>
                                               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <a class="accordion-body body_ac d-block" href="#">Кросс-Докинг</a>
+                                                <a class="accordion-body body_ac d-block" href="{{ route('cross-docking') }}">Кросс-Докинг</a>
+                                                <a class="accordion-body body_ac d-block" href="#">Ответственное хранение</a>
                                                 <a class="accordion-body body_ac d-block" href="#">Аренда Офисов</a>
                                                 <a class="accordion-body body_ac d-block" href="#">Аренда Складов</a>
                                               </div>
@@ -152,6 +154,31 @@
         </div>
     </header>
     <main>
+    <section class="container flashes">
+        <div class="row">
+            <div class="col-12 text-center">
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul class="list-unstyled">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
+            @if (session()->has('error'))
+            <div class="alert alert-danger">
+                {{ session('error') }}
+            </div>
+            @endif
+            @if (session()->has('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+            @endif
+        </div>
+        </div>
+    </section>
     @yield('main')
     </main>
     <footer>
@@ -161,7 +188,7 @@
                 <div class="col-lg-5 col-6 px-0">
                     <div class="row ft_l_p">
                         <div class="col px-0">
-                            <a href="#!"><img src="{{ asset('img/footer-logo.png') }}" alt=""></a>
+                            <a href="{{ route('home') }}"><img src="{{ asset('img/footer-logo.png') }}" alt=""></a>
                         </div>
                         <div class="col-7">
                             <h4 class="footh4">О нас</h4>
@@ -180,7 +207,7 @@
                     <div class="row f_part">
                         <h4>Партнерам</h4>
                         <ul class="text-start">
-                            <li class=""><a href="{{ route('uslugi') }}">Услуги</a></li>
+                            <li class=""><a href="{{ route('cross-docking') }}">Услуги</a></li>
                             <li class=""><a href="#!">Тарифы</a></li>
                             <li class=""><a href="#!">Реквизиты</a></li>
                         </ul>
@@ -199,9 +226,10 @@
                         <p class="f_mail">info@bssopr.ru</p>
                         <p class="f_adress">241020, Россия, г. Брянск, проезд Московский, д. 10а, оф. 310</p>
                     </div>
-                    <form class="row g-2 justify-content-end d-none d-xl-flex">
+                    <form class="row g-2 justify-content-end d-none d-xl-flex" method="post" action="{{ route('mailing') }}">
+                        @csrf
                         <div class="col-auto">
-                            <input type="email" class="form-control" id="inputPassword2" placeholder="Ваш e-mail">
+                            <input type="email" name="email" class="form-control" id="inputPassword2" placeholder="Ваш e-mail">
                         </div>
                         <div class="col-auto">
                             <button type="submit" class="btn btn-primary mb-3">Подписаться</button>
@@ -233,7 +261,7 @@
                         <div class="row">
                             <h4 class="px-0">Партнерам</h4>
                             <ul class="px-0">
-                                <li class=""><a href="{{ route('uslugi') }}">Услуги</a></li>
+                                <li class=""><a href="{{ route('cross-docking') }}">Услуги</a></li>
                                 <li class=""><a href="#!">Тарифы</a></li>
                                 <li class=""><a href="#!">Реквизиты</a></li>
                             </ul>

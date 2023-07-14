@@ -9,15 +9,15 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class UserMail extends Mailable
+class Mailer extends Mailable
 {
     use Queueable, SerializesModels;
-    public $body;
-    public function __construct($body)
+    public $footer;
+    public function __construct($footer)
     {
-        $this->body = $body;
+        $this->footer = $footer;
     }
     public function build() {
-        return $this->view('mails.mailFromUser');
+        return $this->view('mails.mailer');
     }
 }
