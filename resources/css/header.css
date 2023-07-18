@@ -55,7 +55,8 @@ body {
     border: 0px;
 }
 .head_menu_ab:hover,
-.head_menu_ser:hover {
+.head_menu_ser:hover,
+.links_head:hover {
     border-bottom: 3px solid #075C6F;
 }
 .head_menu_ab:hover .dropdown-toggle,
@@ -70,7 +71,8 @@ body {
     padding: 8px 40px 8px 40px;
     text-transform: uppercase;
 }
-.dropdown-item:hover {
+.dropdown-item:hover,
+.links_header:hover {
     color: #075C6F;
     background-color: white;
 }

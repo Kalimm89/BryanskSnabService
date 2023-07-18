@@ -20,7 +20,7 @@
                     <div class="col d-flex flex-column align-items-center justify-content-center intro_desc text-center">
                         <h1>КРОСС-ДОКИНГ <br> И <span>ОТВЕТСТВЕННОЕ</span> ХРАНЕНИЕ ГРУЗОВ</h1>
                         <p>Быстрая выгрузка и своевременная отгрузка, гарантия сохранности продукции</p>
-                        <button class="intro_btn btn">Подробнее</button>
+                        <button class="intro_btn btn" onclick="location.href='{{ route('storage') }}';">Подробнее</button>
                     </div>
                 </div>
             </div>

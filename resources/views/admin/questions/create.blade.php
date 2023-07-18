@@ -1,4 +1,5 @@
 @extends('admin.layouts.layout')
+@section('title', 'Создать вопрос')
 @section('Admin-main')
     <section class="content">
     <div class="card card-primary">

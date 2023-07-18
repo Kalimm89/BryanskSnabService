@@ -1,5 +1,5 @@
 @extends('admin.layouts.layout')
-@section('title', 'Список вопросов')
+@section('title', 'Список пользователей')
 @section('Admin-main')
 <!-- Content Wrapper. Contains page content -->
 
@@ -9,7 +9,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Список вопросов</h3>
+          <h3 class="card-title">Список пользователей</h3>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -28,22 +28,26 @@
 <thead>
 <tr>
 <th style="width: 30px">#</th>
-<th>Вопрос</th>
-<th>Ответ</th>
+<th>Имя</th>
+<th>Почта</th>
+<th>Пароль</th>
+<th>Админка</th>
 <th>Редактировать</th>
 </tr>
 </thead>
 <tbody>
-@foreach($questions as $quest)
+@foreach($users as $quest)
 <tr>
 <td>{{$quest->id}}</td>
-<td>{{$quest->title}}</td>
-<td >{!! $quest->content !!}</td>
+<td>{{$quest->name}}</td>
+<td >{{$quest->email}}</td>
+<td >{{$quest->password}}</td>
+<td >{{$quest->is_admin}}</td>
 <td>
-  <a href="{{ route('questions.edit', $quest->id) }}" class="btn btn-info btn-sm float-left mr-1">
+  <a href="{{ route('userlist.edit', $quest->id) }}" class="btn btn-info btn-sm float-left mr-1">
     <i class="fas fa-pencil-alt"></i>
   </a>
-  <form action="{{ route('questions.destroy', $quest->id) }}" method="post" class="float-left">
+  <form action="{{ route('userlist.destroy', $quest->id) }}" method="post" class="float-left">
     @csrf
     @method('DELETE')
     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Подтвердите удаление')">
@@ -58,7 +62,7 @@
         </div>
         <!-- /.card-body -->
         <div class="card-footer clearfix">
-        {{ $questions->links() }}
+        {{ $users->links() }}
         </div>
         <!-- /.card-footer-->
       </div>

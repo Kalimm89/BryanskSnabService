@@ -1,4 +1,5 @@
 @extends('admin.layouts.layout')
+@section('title', 'Панель администратора')
 @section('Admin-main')
     <section class="content">
 

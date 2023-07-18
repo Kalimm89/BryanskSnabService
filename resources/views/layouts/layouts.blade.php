@@ -10,7 +10,7 @@
              'resources/css/fonts.css',
              'resources/css/footer.css',
              'resources/css/header.css',
-             'resources/css/cross-docking.css',
+             'resources/css/services.css',
              'resources/js/bootstrap.bundle.min.js',
              'resources/js/main.js'])
 </head>
@@ -37,19 +37,19 @@
                         </div>
                     </div>
                     <div class="col head_menu_ser text-center d-none d-xl-block">
-                        <a href="#!" class="dropdown-toggle" id="dropdownMenu2" aria-expanded="false">УСЛУГИ</a>
+                        <a href="{{ route('serv') }}" class="dropdown-toggle" id="dropdownMenu2" aria-expanded="false">УСЛУГИ</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li><a class="dropdown-item" href="{{ route('cross-docking') }}">Кросс-Докинг</a></li>
-                                <li><a class="dropdown-item" href="#">Ответственное хранение</a></li>
+                                <li><a class="dropdown-item" href="{{ route('storage') }}">Ответственное хранение</a></li>
                                 <li><a class="dropdown-item" href="#">Аренда Офисов</a></li>
                                 <li><a class="dropdown-item" href="#">Аренда Складов</a></li>
                             </ul>
                     </div>
-                    <!-- <div class="col head_menu ps-2 d-none d-xl-block">
-                        <a href="">ТАРИФЫ</a>
+                    <!-- <div class="col head_menu ps-2 d-none d-xl-block links_head">
+                        <a href="" class="links_header">ТАРИФЫ</a>
                     </div> -->
-                    <div class="col head_menu d-none d-xl-block text-center">
-                        <a href="">КОНТАКТЫ</a>
+                    <div class="col head_menu d-none d-xl-block text-center links_head">
+                        <a href="#!" class="links_header">КОНТАКТЫ</a>
                     </div>
                 </div>
                 <!-- ---Адаптивный телефон -->
@@ -96,7 +96,7 @@
                                               </h2>
                                               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                                 <a class="accordion-body body_ac d-block" href="{{ route('cross-docking') }}">Кросс-Докинг</a>
-                                                <a class="accordion-body body_ac d-block" href="#">Ответственное хранение</a>
+                                                <a class="accordion-body body_ac d-block" href="{{ route('storage') }}">Ответственное хранение</a>
                                                 <a class="accordion-body body_ac d-block" href="#">Аренда Офисов</a>
                                                 <a class="accordion-body body_ac d-block" href="#">Аренда Складов</a>
                                               </div>
@@ -207,7 +207,7 @@
                     <div class="row f_part">
                         <h4>Партнерам</h4>
                         <ul class="text-start">
-                            <li class=""><a href="{{ route('cross-docking') }}">Услуги</a></li>
+                            <li class=""><a href="{{ route('serv') }}">Услуги</a></li>
                             <li class=""><a href="#!">Тарифы</a></li>
                             <li class=""><a href="#!">Реквизиты</a></li>
                         </ul>

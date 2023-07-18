@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Панель администратора Брянскснабсервис</title>
+  <title>@yield('title')</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -87,6 +87,28 @@
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-archive"></i>
+              <p>Пользователи</p>
+              <i class="right fas fa-angle-left"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('userlist.index')}}" class="nav-link">
+                
+                <p><i class="far fa-circle nav-icon"></i>Список пользователей</p>
+                </a>
+              </li>
+              <li class="nav-item">
+              <a href="{{route('userlist.create')}}" class="nav-link">
+                
+                <p><i class="far fa-circle nav-icon"></i>Создать пользователя</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-archive"></i>
               <p>Вопросы-ответы</p>
               <i class="right fas fa-angle-left"></i>
             </a>
@@ -105,7 +127,6 @@
               </li>
             </ul>
           </li>
-
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
