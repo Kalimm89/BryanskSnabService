@@ -22,7 +22,7 @@
                 </div>
             </div>
         </a>
-        <a href="#!" class="col-12 col-md-6">
+        <a href="{{ route('warehouse-rent') }}" class="col-12 col-md-6">
             <div class="card">
                 <img src="{{ asset('img/uslugi/main-serv-3.png') }}" class="card-img-top w-100 h-100 object-fit-cover" alt="...">
                 <div class="card-body">
@@ -30,7 +30,7 @@
                 </div>
             </div>
         </a>
-        <a href="#!" class="col-12 col-md-6">
+        <a href="{{ route('office-rent') }}" class="col-12 col-md-6">
             <div class="card">
                 <img src="{{ asset('img/uslugi/main-serv-4.png') }}" class="card-img-top w-100 h-100 object-fit-cover" alt="...">
                 <div class="card-body">

@@ -41,8 +41,8 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li><a class="dropdown-item" href="{{ route('cross-docking') }}">Кросс-Докинг</a></li>
                                 <li><a class="dropdown-item" href="{{ route('storage') }}">Ответственное хранение</a></li>
-                                <li><a class="dropdown-item" href="#">Аренда Офисов</a></li>
-                                <li><a class="dropdown-item" href="#">Аренда Складов</a></li>
+                                <li><a class="dropdown-item" href="{{ route('office-rent') }}">Аренда Офисов</a></li>
+                                <li><a class="dropdown-item" href="{{ route('warehouse-rent') }}">Аренда Складов</a></li>
                             </ul>
                     </div>
                     <!-- <div class="col head_menu ps-2 d-none d-xl-block links_head">
@@ -97,8 +97,8 @@
                                               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                                 <a class="accordion-body body_ac d-block" href="{{ route('cross-docking') }}">Кросс-Докинг</a>
                                                 <a class="accordion-body body_ac d-block" href="{{ route('storage') }}">Ответственное хранение</a>
-                                                <a class="accordion-body body_ac d-block" href="#">Аренда Офисов</a>
-                                                <a class="accordion-body body_ac d-block" href="#">Аренда Складов</a>
+                                                <a class="accordion-body body_ac d-block" href="{{ route('office-rent') }}">Аренда Офисов</a>
+                                                <a class="accordion-body body_ac d-block" href="{{ route('warehouse-rent') }}">Аренда Складов</a>
                                               </div>
                                             </div>
                                             <div class="accordion-item mx-auto d-none">

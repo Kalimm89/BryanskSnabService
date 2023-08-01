@@ -100,7 +100,7 @@
                 </div>
             </div>
                 <div class="card-group row">
-                    <a class="col-6 col-xl-3 p-2" href="#!">
+                    <a class="col-6 col-xl-3 p-2" href="{{ route('office-rent') }}">
                         <div class="card">
                             <img src="{{ asset('img/uslugi/serv-1.png') }}" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -108,7 +108,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="col-6 col-xl-3 p-2" href="#!">
+                    <a class="col-6 col-xl-3 p-2" href="{{ route('warehouse-rent') }}">
                         <div class="card">
                             <img src="{{ asset('img/uslugi/serv-2.png') }}" class="card-img-top" alt="...">
                             <div class="card-body">

@@ -7,8 +7,11 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ServController;
 use App\Http\Controllers\Admin\QuestionsController;
 use App\Http\Controllers\Admin\UserListController;
+use App\Http\Controllers\Services\OfficeRentController;
+use App\Http\Controllers\Services\WarehouseRentController;
 use App\Http\Controllers\Services\StorageController;
 use App\Http\Controllers\Services\СrossDockingController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +32,8 @@ Route::prefix('uslugi')->group(function () {
     Route::get('/', [ServController::class, 'index'])->name('serv');
     Route::get('/cross-docking', [СrossDockingController::class, 'index'])->name('cross-docking');
     Route::get('/storage', [StorageController::class, 'index'])->name('storage');
+    Route::get('/office-rent', [OfficeRentController::class, 'index'])->name('office-rent');
+    Route::get('/warehouse-rent', [WarehouseRentController::class, 'index'])->name('warehouse-rent');
 });
 
 Route::middleware('admin')->prefix('admin')->group(function () {
