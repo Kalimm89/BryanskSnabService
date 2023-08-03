@@ -13,6 +13,15 @@
 body {
     overflow-x: hidden;
 }
+/* ---Хлебные крошки */
+.breadcrumb {
+    margin-top: 10px;
+}
+.breadcrumb-item:hover a {
+    text-decoration: underline !important;
+    text-decoration-color: #075C6F;
+    color: #075C6F !important;
+}
 /* ________________________________________________________________________________________ */
 .head_top {
     height: 100px;

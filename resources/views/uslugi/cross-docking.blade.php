@@ -1,6 +1,15 @@
 @extends('layouts.layouts')
 @section('title', 'Кросс-докинг')
 @section('main')
+<section class="container">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{{ route('home') }}" class="text-dark">Главная</a></li>
+    <li class="breadcrumb-item"><a href="{{ route('serv') }}" class="text-dark">Услуги</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Кросс-докинг</li>
+  </ol>
+</nav>
+</section>
 <section class="container about_cros">
     <div class="row">
         <h2 class="col">Кросс-докинг</h2>

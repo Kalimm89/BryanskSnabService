@@ -1,6 +1,14 @@
 @extends('layouts.layouts')
 @section('title', 'Услуги')
 @section('main')
+<section class="container">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/" class="text-dark">Главная</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Услуги</li>
+  </ol>
+</nav>
+</section>
 <section class="container about_cros services">
     <div class="row">
         <h2 class="col">Услуги</h2>
