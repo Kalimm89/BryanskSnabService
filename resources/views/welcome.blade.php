@@ -109,20 +109,20 @@
                 <h2>Наши услуги</h2>
             </div>
             <div class="row flex-column flex-md-row gap-3 gap-md-0">
-                <a class="col" href="#">
+                <a class="col" href="{{ route('cross-docking') }}">
                     <div class="card h-100">
                         <img src="{{ asset('img/serv-1.png') }}" class="card-img-top ct_img h-100" alt="...">
                           <p class="card-text position-absolute ct_one">Кросс-докинг</p>
                       </div>
                     </a>
                 <div class="col d-flex card_right_serv flex-column">
-                    <a class="card" href="#">
+                    <a class="card" href="{{ route('warehouse-rent') }}">
                         <img src="{{ asset('img/serv-2.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-text">Аренда складов</h5>
                         </div>
                     </a>
-                    <a class="card" href="#">
+                    <a class="card" href="{{ route('office-rent') }}">
                         <img src="{{ asset('img/serv-3.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-text">Аренда офисов</h5>

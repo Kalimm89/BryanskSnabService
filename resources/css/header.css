@@ -79,6 +79,13 @@ body {
 .dropdown-item {
     padding: 8px 40px 8px 40px;
     text-transform: uppercase;
+    color: #040404;
+}
+.headbut {
+    padding: 8px 0px 8px 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
 }
 .dropdown-item:hover,
 .links_header:hover {
@@ -88,6 +95,24 @@ body {
 .dropdown-item:active {
     color: #040404;
     background-color: #36C5DF;
+}
+.headbut img {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+}
+.accordion-button:not(.collapsed) img {
+    transform: rotate(-90deg);
+}
+.headbut {
+    font-size: 16px;
+    display: flex;
+    padding: 8px 0px 8px 40px;
+}
+.dif-col {
+   color: #8A8A8A;
 }
 /* ___________________________________Modal_____________________________________________________ */
 .modal-header {

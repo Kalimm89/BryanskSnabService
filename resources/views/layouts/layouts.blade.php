@@ -28,11 +28,22 @@
                             <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Наша команда</a></li>
                                     <li><a class="dropdown-item" href="#">Реквизиты</a></li>
-                                    <li><a class="dropdown-item" href="#">Полезная информация</a></li>
-                                    <li><a class="dropdown-item" href="#">Наши клиенты</a></li>
+                                    <li><div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed headbut" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsenew" aria-expanded="false" aria-controls="flush-collapsenew">
+                                        Полезная <br> информация <img src="../img/11.svg" alt="">
+                                        </button>
+                                        </h2>
+                                        <div id="flush-collapsenew" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"><a class="dropdown-item dif-col" href="#">Политика <br> конфиденциальности</a></div>
+                                            <div class="accordion-body"><a class="dropdown-item dif-col" href="#">Cогласие на обработку <br> данных</a></div>
+                                            <div class="accordion-body"><a class="dropdown-item dif-col" href="#">Карта сайта</a></div>
+                                            <div class="accordion-body"><a class="dropdown-item dif-col" href="#">Вопросы и ответы</a></div>
+                                        </div>
+                                        </div>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">Документы <br> для акционеров</a></li>
-                                    <li><a class="dropdown-item" href="#">Политика <br> конфиденциальности</a></li>
-                                    <li><a class="dropdown-item" href="#">Cогласие на обработку <br> данных</a></li>
+                                    
                             </ul>
                         </div>
                     </div>
